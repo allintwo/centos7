@@ -5,3 +5,8 @@ java -jar selenium-server-standalone-2.40.0.jar
 # 127.0.0.1:4444/wd/hub
 
 java -jar selenium-server-standalone-4.0.0-alpha-2.jar -host 127.0.0.1 -port 4444
+
+
+#reg bg
+java -jar selenium-server-standalone-4.0.0-alpha-2.jar -role hub
+java -jar selenium-server-standalone-4.0.0-alpha-2.jar -role node  -hub http://localhost:4444/grid/register
